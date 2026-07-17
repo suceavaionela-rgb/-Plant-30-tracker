@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant30 Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🌿 Plant30 Tracker</h1>
+
+<div class="card">
+<h2>Proteine</h2>
+<p id="proteinValue">0 / 90 g</p>
+<progress id="proteinBar" value="0" max="90"></progress>
+
+<input type="number" id="proteinInput" placeholder="Adaugă grame">
+<button onclick="addProtein()">Adaugă</button>
+</div>
+
+<div class="card">
+<h2>Fibre</h2>
+<p id="fiberValue">0 / 30 g</p>
+<progress id="fiberBar" value="0" max="30"></progress>
+
+<input type="number" id="fiberInput" placeholder="Adaugă grame">
+<button onclick="addFiber()">Adaugă</button>
+</div>
+
+<div class="card">
+<h2>30 plante / săptămână</h2>
+
+<input
+type="text"
+id="plantInput"
+placeholder="Ex: broccoli">
+
+<button onclick="addPlant()">Adaugă plantă</button>
+
+<ul id="plantList"></ul>
+
+<p id="plantCount">
+0 / 30 plante
+</p>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
